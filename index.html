@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shift</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body id="main">
+    <div class="container">
+        <header class="my-3">
+            <h3 class="text-center">Shift Simulation</h3>
+            <h6 class="text-center"><i>Digital design</i></h6>
+        </header>
+        <div class="row">
+            <div class="col-md-10 my-5 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <small>
+                            <b>Enter value corresponding to <b>e</b> for the form
+                                <b><i>2<sup>e</sup></i></b></b>
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <form id="form">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="e"><small>Number of bits</small></label>
+                                    <input type="number" class="form-control" id="e" name="e"
+                                        placeholder="Enter the number of bits"
+                                        title="Enter the number of bits with which you want to generate sequence" required>
+                                </div>
+                            </div>
+                            <div class="float-right">
+                                <input type="submit" class="btn btn-info btn-sm" value="Evaluate">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 my-1 mx-auto text-center">
+                <b><span>Values</span></b>
+                <table id="table" class="table table-striped table-warning">
+                    <thead>
+                        <tr>
+                            <th>Prime Decimal</th>
+                            <th>Prime Binary</th>
+                            <th>Prime Hex</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <!-- <script src="./js/jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="./js/jquery-validation-1.19.1/dist/localization/messages_es.js"></script> -->
+    <script src="./js/jquery.canvasjs.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
